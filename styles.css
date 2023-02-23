@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 21px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: auto;
+}
+
+/*Cabecera*/
+.squareOne{
+  background-color: #F2F2F2;
+  grid-column: 1/2;
+}
+
+.squareTwo{
+  background-color: #F2F2F2;
+  grid-column: 3/4;
+}
+
+.header {
+  grid-column: 2/3;
+  background-color: #f2f2f2;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding: 0 5px;
+}
+
+.bloque2,
+.bloque1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rectangulo {
+  width: 103px;
+  height: 268px;
+  background: #ffae0d;
+  float: left;
+  position: absolute;
+}
+/* header */
+
+.information{
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 21px;
+}
+
+.hero {
+  max-width: 711px;
+  margin-top: 50px; ;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  /* padding: 0 20px; */
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+/* Cuadrado Grande */
+.cuadrado{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+h3{
+  grid-column: 1/5;
+  text-align: center;
+  font-size: 24px;
+}
+
+.leftArrow {
+  grid-column: 1/2;
+  grid-row: 2/4;  
+}
+
+.option-one {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.option-two{
+ grid-column: 3/4;
+ grid-row: 2/3;
+}
+
+.option-three {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.option-four {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.rightArrow {
+  grid-column: 4/5;
+  grid-row: 2/4;
+}
+
+.leftArrow{
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+
+button {
+  grid-column: 1/5;
+  grid-row: 4/5 ;
+  background-color: #ffae0d;
+  color: white;
+  padding: 10px 70px;
+  border: none;
+  font-size: 21px;
+}
+.option {
+  border: #A9A9A9 solid 1px;
+  display: flex;
+  background-color: #FFFF;
+}
+
+.text {
+  font-weight: 700;
+  font-size:20px ;
+  text-align: left;
+}
+
+@media only screen and (max-width:1205px){
+  .text {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width:1109px){
+  .text {
+    font-size: 15px;
+  }
+}
